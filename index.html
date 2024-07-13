@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a="hello Guys gUYs";
+        console.log(/guys/ig.test(a));
+        console.log(a.match(/guys/ig));
+        console.log(a.match(/g..s/ig))
+        console.log(a.match(/g[^a-z][^a-z]s/g));
+        console.log("//////");
+        var b="12haa@";
+        console.log(b.match(/^[a-z]/));
+        console.log(b.match(/\W/ig));
+        console.log(a.match(/\w/ig));
+        var c="goool";
+        console.log(c.match(/g*/ig));
+        var d="chi@gmail.com";
+        console.log(d.match(/^@gmail.com/ig));
+        console.log(d.match(/@gmail.com$/ig));
+        console.log(d.match(/[^a-z]/ig));
+        console.log(d.match(/^[a-z]/ig));
+        var e="aoao";
+        console.log(e.match(/(a)(o)\1\2/));   
+    </script>
+</body>
+</html>
